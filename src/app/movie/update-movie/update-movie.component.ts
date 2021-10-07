@@ -13,7 +13,8 @@ import {Movie} from "../../model/movie";
 export class UpdateMovieComponent implements OnInit {
   id!: number;
   movie: Movie = new Movie();
-  constructor(private movieService: MovieService, private router: Router,
+  constructor(private movieService: MovieService,
+              private router: Router,
               private route: ActivatedRoute) { }
 
   ngOnInit(): void {

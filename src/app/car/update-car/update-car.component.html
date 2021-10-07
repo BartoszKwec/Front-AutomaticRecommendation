@@ -1,0 +1,33 @@
+<div class="col-md-6 offset-md-3">
+  <h3>Update car</h3>
+  <form (ngSubmit) = "onSubmit()">
+
+    <div class="form-group">
+      <label>Car mark</label>
+      <input type="text" class="form-control" id="carMark"
+             [(ngModel)]="car.carMark" name="carMark">
+    </div>
+    <div class="form-group">
+      <label>Car model</label>
+      <input type="text" class="form-control" id="carModel"
+             [(ngModel)]="car.carModel" name="carModel">
+    </div>
+    <div class="form-group">
+      <label>Car power</label>
+      <input type="text" class="form-control" id="carPower"
+             [(ngModel)]="car.carPower" name="carPower">
+    </div>
+    <div class="form-group">
+      <label>Car typ</label>
+      <input type="text" class="form-control" id="carType"
+             [(ngModel)]="car.carType" name="carType">
+    </div>
+    <div class="form-group">
+      <label>Car Generation</label>
+      <input type="text" class="form-control" id="carGeneration"
+             [(ngModel)]="car.carGeneration" name="carGeneration">
+    </div>
+    <button class = "btn btn-success" type="submit">Submit</button>
+  </form>
+</div>
+

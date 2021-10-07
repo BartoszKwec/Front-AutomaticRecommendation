@@ -14,7 +14,11 @@ import {MovieService} from "./service/movie.service";
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MainPageComponent } from './main-page/main-page.component';
-import { CarComponent } from './car/car.component';
+import { CreateCarComponent } from './car/create-car/create-car.component';
+import { CarDetailsComponent } from './car/car-details/car-details.component';
+import { CarListComponent } from './car/car-list/car-list.component';
+import { UpdateCarComponent } from './car/update-car/update-car.component';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +30,11 @@ import { CarComponent } from './car/car.component';
     FooterComponent,
     NavbarComponent,
     MainPageComponent,
-    CarComponent
+    CreateCarComponent,
+    CarDetailsComponent,
+    CarListComponent,
+    UpdateCarComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
