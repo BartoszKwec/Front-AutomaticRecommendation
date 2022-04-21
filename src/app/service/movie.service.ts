@@ -9,10 +9,10 @@ import {Movie} from "../model/movie";
 })
 export class MovieService {
 
-  private baseURL = "http://localhost:8080/api/v1/movies"
+  private baseURL = "http://localhost:9090/movies"
   constructor(private httpClient: HttpClient) { }
 
-//port 4200
+//port 4200   http://localhost:8080/api/v1/movies
 
   getMoviesList(): Observable<Movie[]>{
     return this.httpClient.get<Movie[]>(`${this.baseURL}`);

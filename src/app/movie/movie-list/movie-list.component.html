@@ -2,22 +2,30 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th>Movie name</th>
-      <th>Movie length</th>
-      <th>Movie type</th>
+      <th>Movie title</th>
+      <th>Movie tag</th>
+      <th>Powiązania</th>
       <th>Actions</th>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let movie of movies">
-      <td>{{ movie.movieName}}</td>
-      <td>{{ movie.movieLength}}</td>
-      <td>{{ movie.movieType}}</td>
+      <td>{{ movie.tag}}</td>
+      <td>{{ movie.title}}</td>
       <td>
-        <button (click)="updateMovie(movie.movieId)" class="btn btn-info">Update</button>
-        <button (click)="deleteMovie(movie.movieId)" class="btn btn-danger" style="margin-left: 5px">Delete</button>
+        <ul *ngFor="let rating of movie.ratings">
+          rating id: {{rating.ratingId}}
+          user id: {{rating.userId}}
+          rating: {{rating.rating}}
+          timestamp:{{rating.timestamp}}
+        </ul>
+       </td>
+      <td>
+        <button (click)="updateMovie(movie.id)" class="btn btn-info">Update</button>
+        <button (click)="deleteMovie(movie.id)" class="btn btn-danger" style="margin-left: 5px">Delete</button>
       </td>
 
     </tr>
   </tbody>
 </table>
+

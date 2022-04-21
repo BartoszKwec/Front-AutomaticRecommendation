@@ -32,6 +32,7 @@ export class MovieListComponent implements OnInit {
   }
   private getMovies(){
     this.movieService.getMoviesList().subscribe(data => {
+      console.log(data);
       this.movies = data;
     });
   }

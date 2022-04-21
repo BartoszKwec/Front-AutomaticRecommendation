@@ -1,0 +1,25 @@
+<h2> Rating list</h2>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>title</th>
+    <th>rating</th>
+    <th>Actions</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let rating of ratings">
+    <td>{{ rating.userId}}</td>
+    <td>
+      <!--      <button (click)="updateMovie(rating.ratingId)" class="btn btn-info">Update</button>-->
+      <!--      <button (click)="deleteMovie(rating.ratingId)" class="btn btn-danger" style="margin-left: 5px">Delete</button>-->
+    </td>
+
+  </tr>
+  </tbody>
+</table>
+
+<!--<ul *ngFor="let rating of ratingsBox">-->
+<!--  <li>  {{rating.userId}}</li>-->
+
+<!--</ul>-->

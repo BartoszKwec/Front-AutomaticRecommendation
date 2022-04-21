@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Front-MixLearn';
+  title = 'Nazwa robocza';
   show1: boolean= true;
   show2: boolean= true;
   show3: boolean= true;

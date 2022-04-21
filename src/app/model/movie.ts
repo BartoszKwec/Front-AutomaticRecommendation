@@ -1,8 +1,10 @@
+import {Rating} from "./rating";
+
 export class Movie {
-  movieId!: number;
-  movieName!: string;
-  movieLength!: number;
-  movieType!: string;
+  id!: number;
+  title!: string;
+  tag!: string;
+  ratings!: Rating[];
 
 
 }

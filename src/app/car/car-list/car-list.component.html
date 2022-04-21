@@ -3,24 +3,19 @@
 <table class="table table-striped">
   <thead>
   <tr>
-    <th>Car mark</th>
-    <th>Car model</th>
-    <th>Car type</th>
-    <th>Car power</th>
-    <th>Car generation</th>
+    <th>Name</th>
+    <th>Last name</th>
+
     <th>Action</th>
   </tr>
   </thead>
   <tbody>
   <tr *ngFor="let car of cars">
-    <td>{{ car.carMark}}</td>
-    <td>{{ car.carModel}}</td>
-    <td>{{ car.carType}}</td>
-    <td>{{ car.carPower}}</td>
-    <td>{{ car.carGeneration}}</td>
+    <td>{{ car.name}}</td>
+    <td>{{ car.lastName}}</td>
+
     <td>
-      <button (click)="updateCar(car.carId)" class="btn btn-info">Update</button>
-      <button (click)="deleteCar(car.carId)" class="btn btn-danger" style="margin-left: 5px">Delete</button>
+
     </td>
 
   </tr>

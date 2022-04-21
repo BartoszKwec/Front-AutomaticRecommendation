@@ -5,26 +5,38 @@
   box-sizing: border-box;
   font-family: 'Nunito', sans-serif;
 }
-body{
+
+.body{
+  justify-content: center;
+  align-items: center;
+  min-height: 2vh;
+  background: #08001b;
+  overflow: hidden;
+
+}
+.container{
+  position: relative;
+  width: 600px;
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  background: #000;
-  overflow: hidden;
-
+}
+.test{
+  width: 100%;
 }
 .box{
   position: relative;
   width: 600px;
-  height: 300px;
+  /*height: 100px;*/
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .box h2{
   color: #fff;
-  font-size: 4em;
+  margin: 4px;
+  font-size: 3em;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-shadow: 0 0 10px #00b3ff,
@@ -69,7 +81,7 @@ body{
   left: 0;
   width: 100%;
   height: 100%;
-  background: #000;
+  background: #08001b;
   animation: animatetopLayer 10s linear infinite;
 }
 @keyframes animatetopLayer {

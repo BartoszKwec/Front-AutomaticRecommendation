@@ -19,11 +19,18 @@ import { CarDetailsComponent } from './car/car-details/car-details.component';
 import { CarListComponent } from './car/car-list/car-list.component';
 import { UpdateCarComponent } from './car/update-car/update-car.component';
 import { MenuComponent } from './menu/menu.component';
+import {NgxPaginationModule} from "ngx-pagination";
+import {RatingListComponent} from "./rating/rating-list/rating-liest.component";
+import { TestComponent } from './test/test.component';
+import { MenuAlgorithmComponent } from './menu-algorithm/menu-algorithm.component';
+import { AlgorithmComponent } from './algorithms/algorithm-softmax/algorithm.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     MovieListComponent,
+    RatingListComponent,
     CreateMovieComponent,
     UpdateMovieComponent,
     MovieDetailsComponent,
@@ -34,14 +41,18 @@ import { MenuComponent } from './menu/menu.component';
     CarDetailsComponent,
     CarListComponent,
     UpdateCarComponent,
-    MenuComponent
+    MenuComponent,
+    TestComponent,
+    MenuAlgorithmComponent,
+    AlgorithmComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    NgxPaginationModule
   ],
   providers: [MovieService],
   bootstrap: [AppComponent]

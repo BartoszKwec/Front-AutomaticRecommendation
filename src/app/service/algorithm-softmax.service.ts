@@ -10,7 +10,7 @@ import {Car} from "../model/car";
 })
 export class CarService {
 
-  private baseURL = "http://localhost:9090/users"
+  private baseURL = "http://localhost:9090/userId"
   constructor(private httpClient: HttpClient) { }
 
 //port 4200
@@ -34,4 +34,5 @@ export class CarService {
   deleteCar(id: number): Observable<Object>{
     return this.httpClient.delete(`${this.baseURL}/${id}`);
   }
+
 }
